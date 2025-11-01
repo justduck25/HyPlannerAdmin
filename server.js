@@ -7,7 +7,12 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000'],
+  origin: [
+    'http://localhost:5173', 
+    'http://localhost:3000',
+    'https://hy-planner-admin-fe.vercel.app',
+    'https://hy-planner-admin.vercel.app'
+  ],
   credentials: true
 }));
 app.use(express.json());
